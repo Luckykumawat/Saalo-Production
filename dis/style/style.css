@@ -1,0 +1,74 @@
+.h-video{
+   display: none;
+
+}
+
+.portret1,.portret2,.portret3,.portret4,.portret5,
+.portret6,.portret7,.portret8,.portret9,.portret10,
+.portret11,.portret12{
+    display: none;
+}
+
+.t-img1:hover .portret1,.t-img2:hover .portret2,
+.t-img3:hover .portret3,.t-img4:hover .portret4,
+.t-img5:hover .portret5,.t-img6:hover .portret6,
+.t-img7:hover .portret7,.t-img8:hover .portret8,
+.t-img9:hover .portret9,.t-img10:hover .portret10,
+.t-img11:hover .portret11,.t-img12:hover .portret12{
+    display: block;
+}
+
+
+/* 
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background: #f1f4fd;
+  }  */
+
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .frame{ 
+    /* width: 40vw;
+    height: 40vh; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+
+  .slider{
+    display: flex;
+    transition: all 1s ease;
+  }
+
+  .text{
+    
+    transition: all 1s ease;
+  }
+
+  
+  .image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } 
+
+  
+  
+  i{
+    font-size: 4vw;
+    color: black;
+  }
+  

@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saalo</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="icon" type="image/png" href="./image/Untitled design (1).png">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    
+
+</head>
+
+<body>
+    <div class="main w-full relative h-screen" style="font-family: Poppins;">
+        <nav class="w-full pt-[.1vw] pb-[.1vw] md:pt-[2vw]  md:pb-[1vw]   fixed z-40 bg-white  flex pl-[2vw] pr-[2vw] md:pl-[3vw] md:pr-[3vw] items-center justify-between "
+            style="border-bottom: 1px solid black;">
+            <div class="logo w-[13vw] md:w-[10vw] lg:w-[9vw]">
+                <a href="index.html"><img class="" src="./image/saalo-logo.png" alt=""></a>
+            </div>
+            <div
+                class="ankers text-black hidden  lg:flex md:gap-10 2xl:gap-20 lg:text-[.7rem] xl:text-[.8rem] 2xl:text-[1rem]">
+                <a href="home.html">HOME</a>
+                <a href="portfolio.html">PORTFOLIO</a>
+                <a href="ourteem.html">OUR TEAM</a>
+                <a href="blog.html">BLOG</a>
+            </div>
+            <div class="social-app  lg:flex gap-2 text-white  text-lg  hidden mb-2 ">
+                <a class="w-6 h-6 lg:w-6 lg:h-6 xl:w-7 xl:h-7 2xl:h-9 2xl:w-9 bg-gray-600 rounded-full  flex items-center justify-center"
+                    href="https://facebook.com"><i
+                        class="ri-facebook-line text-[#fc6534]  2xl:text-[1rem] text-[1rem]"></i></a>
+                <a class="w-6 h-6 lg:w-6 lg:h-6 xl:w-7 xl:h-7 2xl:h-9 2xl:w-9 bg-gray-600 rounded-full flex items-center justify-center"
+                    href="https://instagram.com"><i
+                        class="ri-instagram-line text-[#fc6534] 2xl:text-[1rem]  text-[1rem]"></i></a>
+                <a class="w-6 h-6 lg:w-6 lg:h-6 xl:w-7 xl:h-7 2xl:h-9 2xl:w-9 bg-gray-600 rounded-full  flex items-center justify-center"
+                    href="https://twitter.com"><i
+                        class="ri-twitter-line text-[#fc6534] 2xl:text-[1rem]  text-[1rem]"></i></a>
+                <a class="w-6 h-6 lg:w-6 lg:h-6 xl:w-7 xl:h-7 2xl:h-9 2xl:w-9 bg-gray-600 rounded-full  flex items-center justify-center"
+                    href="https://linkedin.com"><i
+                        class="ri-linkedin-line text-[#fc6534]  2xl:text-[1rem] text-[1rem]"></i></a>
+                <a class="w-6 h-6 lg:w-6 lg:h-6 xl:w-7 xl:h-7 2xl:h-9 2xl:w-9 bg-gray-600 rounded-full  flex items-center justify-center"
+                    href="https://youtube.com"><i
+                        class="ri-youtube-line text-[#fc6534] 2xl:text-[1rem]  text-[1rem]"></i></a>
+                <a class="w-6 h-6 lg:w-6 lg:h-6 xl:w-7 xl:h-7 2xl:h-9 2xl:w-9 bg-gray-600 rounded-full  flex items-center justify-center"
+                    href="https://whatsapp.com"><i
+                        class="ri-whatsapp-line text-[#fc6534]  2xl:text-[1rem] text-[1rem]"></i></a>
+            </div>
+            <div class="icon relative lg:hidden "><i class="ri-menu-3-line text-black text-xl"></i></div>
+        </nav>
+
+
+        <div style="display: none;" class="burger fixed z-40 right-0 top-10  md:top-[3.2rem] w-[100%] bg-[#f2f2f2]">
+            <div class="remove w-full flex items-center justify-between">
+                <div class="logo  mt-[2vw] w-[6vw] ml-[3.7vw]">
+                    <a href="index.html"><img class="" src="./image/saalo-logo.png" alt=""></a>
+                </div>
+                <i class=" close ri-close-line text-[100%] text-black mr-[.4vw] "></i>
+            </div>
+
+
+            <div class="home w-[80%]  mx-auto sm:mt-[1vw] md:mt-[2vw]"><a
+                    class="text-[.3rem] sm:text-[.6rem] md:text-[.8rem]" href="home.html">Home
+                    <hr>
+                </a></div>
+            <div class="home w-[80%]  mx-auto sm:mt-[1vw] md:mt-[2vw]"><a
+                    class="text-[.3rem] sm:text-[.6rem] md:text-[.8rem]" href="portfolio.html">Portfolio
+                    <hr>
+                </a></div>
+            <div class="home w-[80%]  mx-auto sm:mt-[1vw] md:mt-[2vw]"><a
+                    class="text-[.3rem] sm:text-[.6rem] md:text-[.8rem]" href="ourteem.html">Out Teem
+                    <hr>
+                </a></div>
+            <div class="home w-[80%]  mx-auto sm:mt-[1vw] md:mt-[2vw] mb-[3vw]"><a
+                    class="text-[.3rem] sm:text-[.6rem] md:text-[.8rem]" href="blog.html">Blog
+                    <hr>
+                </a></div>
+        </div>
+        <div class="page_0 w-full   relative"
+            style="background-image: url('./image/alfa-home-slider-img-1\ 1.png');background-size: 100% 100%; background-repeat: no-repeat;">
+
+            <div class="kitty-main w-full  lg:ml-0  lg:mt-0  flex justify-center pt-[9vw] lg:pt-[6vw]">
+                <div class="one w-[60%]  mx-auto mb-5 ml-[vw] lg:ml-  mt-5">
+                    <div class="tex w-full ml-7 lg:ml-0">
+                        <h1 class=" kitty text-[16vw] lg:text-[21vw]  uppercase"
+                            style="-webkit-text-stroke: 1px white; color: transparent;font-family:impact ;letter-spacing: 2.9vw; ">
+                            saalo</h1>
+
+                        <h1 style="font-family: Impact, Haettenschweiler;letter-spacing: 3.5vw; color: #fc6534;font-weight: 400;"
+                            class="prods w-full mx-auto -mt-[15vw] lg:-mt-[20vw] -ml-[2vw] lg:-ml-[1vw]  text-[3.5vw] lg:text-[4.7vw] ">
+                            PRODUCTIONS</h1>
+                    </div>
+
+                    <div class="play">
+                        <h1
+                            class=" play-icon text-[.3rem] 2xl:text-[2rem] w-[60%]  mx-auto text-white flex justify-center mt-[7vw] ">
+                            Watch Our Larest Project</h1>
+                        <img class=" w-[4vw] ml-[27vw] lg:ml-[27vw]  m-auto mt-1 " src="./image/play.png" alt="">
+                    </div>
+                    <div
+                        class="best w-[70%] justify-center  flex gap-5 lg:gap-14 xl:gap-5 ml-[8vw] sm:ml-[8vw] lg:ml-28 xl:ml-[11.5vw] lg:w-[35vw]  mx-auto mt-[1rem] sm:mt-[2rem] ">
+                        <img class="w-[6vw]" src="./image/About-logo-img-2 1.png" alt="">
+                        <img class="w-[6vw]" src="./image/About-logo-img-2 1.png" alt="">
+                        <img class="w-[6vw]" src="./image/About-logo-img-2 1.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="page_1 w-full  bg-black py-[4vw]">
+            <div class="our w-[90%] mx-auto text-white lg:flex lg:justify-center lg:items-center">
+                <div class="our w-[100%] justify-center lg:w-[40%] text-[.3rem] sm:text-[.6rem]  md:text-[.9rem] lg:text-[1rem] 2xl:text-[1.72rem] flex lg:justify-end"
+                    style="font-weight: 700;">Our Project</div>
+                <div class="para text-center  text-[.2rem] sm:text-[.5rem] md:text-[.6rem] lg:text-[.6rem] 2xl:text-[1rem]  3xl:text-[4rem] w-[100%] md:w-[65%] mx-auto  md:ml-[5rem] md:mr-[5vw] "
+                    style="font-weight: 400;">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex eius similique fuga consectetur quidem
+                    maxime error tenetur eum veritatis tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Commodi dolores sit itaque quas sunt consectetur rem saepe? Deserunt rerum, nobis debitis omnis
+                    mollitia
+                    ut vero ea facilis alias, fugiat iste.</div>
+            </div>
+        </div>
+
+
+        <div class="page_2 h-[40vh] w-[42%] mx-auto lg:mt-[6vh] ">
+            <div class="container">
+                <div class="frame w-[40.5vw] h-[30vh]  lg:h-[40vh] ">
+                    <div class="slider  lg:gap-2">
+                        <img src="./image/alfa-home-c-img-1.png " class="image" alt="">
+                        <img src="./image/alfa-home-c-img-2.png " class="image" alt="">
+                        <img src="./image/alfa-home-c-img-3.png " class="image" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-text  lg:mt-[10vh] mx-auto ">
+            <div class="stars-text relative flex items-center justify-center ">
+                <i class="ri-arrow-left-s-line left mt-[4vh] ml-[15vw] lg:pl-[0vw]"></i>
+                <div class="t-slide mx-auto overflow-hidden w-[100vw]">
+                    <div class="text flex w-[50vw] mx-auto gap-[50vw] bg-blac  md:mt-[6vh] ">
+                        <div class="p ">
+                            <img src="./image/Group 39717.png" class="w-[14vw] lg:w-[7vw] mx-auto mb-[3vw]" alt="">
+                            <p
+                                class="text-[.7rem] md:text-[.5rem] lg:text-[.6rem] xl:text-[.8rem] 2xl:text-[1rem] para w-[50vw] text-center">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde saepe delectus id quae
+                                animi, architecto minus ab aperiam eaque vero?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde saepe delectus id quae
+                                animi, architecto minus ab aperiam eaque vero?
+                            </p>
+                        </div>
+                        <div class="p">
+                            <img src="./image/Group 39717.png" class="w-[14vw] lg:w-[7vw] mx-auto mb-[3vw]" alt="">
+                            <p
+                                class="text-[.7rem] lg:text-[.6rem] xl:text-[.8rem] 2xl:text-[1rem] para w-[50vw] text-center">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde saepe delectus id quae
+                                animi, architecto minus ab aperiam eaque vero?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde saepe delectus id quae
+                                animi, architecto minus ab aperiam eaque vero?
+                            </p>
+                        </div>
+                        <div class="p">
+                            <img src="./image/Group 39717.png" class="w-[14vw] lg:w-[7vw] mx-auto mb-[3vw]" alt="">
+                            <p
+                                class="text-[.7rem] lg:text-[.6rem] xl:text-[.8rem] 2xl:text-[1rem] para w-[50vw] text-center">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde saepe delectus id quae
+                                animi, architecto minus ab aperiam eaque vero?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde saepe delectus id quae
+                                animi, architecto minus ab aperiam eaque vero?
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <i class="ri-arrow-right-s-line right mt-[4vh] mr-[15vw] lg:pr-[0vw] "></i>
+            </div>
+        </div>
+
+        <div class="page_3 song w-full   text-white mt-[5rem]"
+            style="background-image: url('./image/Blog-standard-img-16\ 1.png');background-size: 100% 100%; background-repeat: no-repeat;">
+            <div class="new text-center pt-[2rem]">
+                <h1 class="text-[.3rem] sm:text-[.6rem] md:text-[1vw] lg:text-[.7rem] 2xl:text-[1rem]" style="font-weight: 600;">New Films</h1>
+                <h1 class="text-[.5rem] sm:text-[.7rem] md:text-[2vw] lg:text-[1.2rem] 2xl:text-[2.3rem]" style="font-weight: 700;">LATEST TRAILERS
+                </h1>
+            </div>
+            <div class="videos w-[90%] mx-auto space-y-4 pb-10 relative">
+                <div
+                    class="row w-[30%] lg:w-[60%] m-auto block lg:flex  justify-center gap-4 mt-[3rem] space-y-8 lg:space-y-0">
+                    <div class="img1 lg:h-[22vw] lg:w-[20vw] md:rounded-md  lg:rounded-xl overflow-hidden relative ">
+                        <img src="./image/Rectangle 7709.png" alt="">
+                        <img class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-2/3 h-[5vw] w-[5vw] "
+                            src="./image/Group 39600.png " alt="">
+                        <h1 class=" text-[.4rem] sm:text-[.7rem] md:text-[1rem] lg:text-[1.15rem] 2xl:text-[2rem] text-center mt-[.5rem]"
+                            style="font-weight: 700;">Ek
+                            Hasina
+                        </h1>
+                    </div>
+
+                    <div class="img2 lg:h-[22vw] lg:w-[20vw] md:rounded-md  lg:rounded-xl overflow-hidden relative">
+                        <img src="./image/Rectangle 7710.png" alt="">
+                        <img class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-2/3 h-[5vw] w-[5vw] "
+                            src="./image/Group 39600.png " alt="">
+                        <h1 class="text-[.4rem] sm:text-[.7rem] md:text-[1rem] lg:text-[1.15rem] 2xl:text-[2rem] text-center mt-[.5rem]"
+                            style="font-weight: 700;">Ek
+                            Diwani
+                        </h1>
+
+                    </div>
+                    <div class="img3 lg:h-[22vw] lg:w-[20vw]  md:rounded-md  lg:rounded-xl overflow-hidden relative">
+                        <img src="./image/Rectangle 7711.png" alt="">
+                        <img class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-2/3 h-[5vw] w-[5vw] "
+                            src="./image/Group 39600.png " alt="">
+                        <h1 class="text-[.4rem] sm:text-[.7rem] md:text-[1rem] lg:text-[1.15rem] 2xl:text-[2rem] text-center mt-[.5rem]"
+                            style="font-weight: 700;">Ek
+                            Mastani
+                        </h1>
+
+                    </div>
+                </div>
+                <div
+                    class="row w-[30%] lg:w-[60%] m-auto block lg:flex  justify-center gap-4 mt-[3rem] space-y-8 lg:space-y-0">
+                    <div class="img4 lg:h-[22vw] lg:w-[20vw]  md:rounded-md  lg:rounded-xl overflow-hidden relative">
+                        <img src="./image/Rectangle 7709.png" alt="">
+                        <img class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-2/3 h-[5vw] w-[5vw] "
+                            src="./image/Group 39600.png " alt="">
+                        <h1 class=" text-[.4rem] sm:text-[.7rem] md:text-[1rem] lg:text-[1.15rem] 2xl:text-[2rem] text-center mt-[.5rem]"
+                            style="font-weight: 700;">Ek
+                            Hasina
+                        </h1>
+                    </div>
+                    <div class="img5 lg:h-[22vw] lg:w-[20vw] md:rounded-md  lg:rounded-xl overflow-hidden relative">
+                        <img src="./image/Rectangle 7710.png" alt="">
+                        <img class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-2/3 h-[5vw] w-[5vw] "
+                            src="./image/Group 39600.png " alt="">
+                        <h1 class="text-[.4rem] sm:text-[.7rem] md:text-[1rem] lg:text-[1.15rem] 2xl:text-[2rem] text-center mt-[.5rem]"
+                            style="font-weight: 700;">Ek
+                            Diwani
+                        </h1>
+
+                    </div>
+                    <div class="img6 lg:h-[22vw] lg:w-[20vw]  md:rounded-md  lg:rounded-xl overflow-hidden relative">
+                        <img src="./image/Rectangle 7711.png" alt="">
+                        <img class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-2/3 h-[5vw] w-[5vw] "
+                            src="./image/Group 39600.png " alt="">
+                        <h1 class="text-[.4rem] sm:text-[.7rem] md:text-[1rem]  lg:text-[1.15rem] 2xl:text-[2rem] text-center mt-[.5rem]"
+                            style="font-weight: 700;">Ek
+                            Mastani
+                        </h1>
+
+                    </div>
+                </div>
+            </div>
+            <!--Hidden video -->
+            <div
+                class="h-video w-[90%] h-[30%] lg:w-[60vw]  lg:h-[60vh] overflow-hidden mt-[15vw] fixed top-[35vh] left-1/2 -translate-x-1/2 -translate-y-2/3 z-40">
+
+                <div class="video w-full h-full">
+                    <div class="remove "><i class="ri-close-circle-line text-[2rem] text-red-600"></i></div>
+                    <iframe class="w-full h-full object-cover" width="560" height="315"
+                        src="https://www.youtube.com/embed/IIM5ATGEmzE?si=EtrWbyzsqTb-HUU7" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="page_4 w-full mt-[1.5rem]">
+            <div class="new text-center pt-[1rem]">
+                <h1 class="text-[.3rem] sm:text-[.7rem] md:text-[1rem] 2xl:text-[1rem]" style="font-weight: 600;">New Song</h1>
+                <h1 class="mx-auto" style="background-color: aqua; height: 1px;width: 3vw;"></h1>
+                <h1 class="text-[.6rem] sm:text-[.9rem] md:text-[1.3rem] lg:text-[1.5rem] 2xl:text-[2rem] mt-[1rem]" style="font-weight: 700;">LATEST SONG
+                    RELEASE</h1>
+            </div>
+            <div class="row w-[40%] md:w-[50%] lg:w-[70%] mx-auto   block lg:flex  gap-8 lg:gap-5 mt-[3rem] space-y-8 lg:space-y-0">
+
+                <div class="card_1 w-[100%] md:w-[90%] mx-auto ">
+                    <div class="img  w-[100%] lg:w-[16vw]  overflow-hidden relative">
+                        <img class=" w-full h-full object-cover rounded-t-[.2rem]" src="./image/Rectangle 7649.png"
+                            alt="">
+                        <img class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-2/3 h-[5vw] w-[5vw] "
+                            src="./image/Group 39600.png " alt="">
+                    </div>
+                    <div class="para_9 w-[100%] ">
+                        <h1 class="text-[1rem] md:text-[1.8rem] lg:text-[.8rem] 2xl:text-[1.2rem] w-[100%] py-[.6rem] mt-[.1rem] text-black"
+                            style="font-weight: 700;">Tera
+                            Chand sa Mukhada
+                        </h1>
+                        <p class="text-black w-[100%]  lg:w-[100%] xl:w-[96%] text-[.6rem] md:text-[1.2rem] lg:text-[.6rem] 2xl:text-[.9rem]"
+                            style="font-weight: 300;">
+                            Aliquam felis ex, viverra et
+                            commodo euismod, dignissim et eros. Integer efficitur sem neque, id rutrum diam aliquet
+                            et.
+                        </p>
+                    </div>
+                </div>
+                <div class="card_2 w-[100%] md:w-[90%] mx-auto ">
+                    <div class="img  w-[100%] lg:w-[16vw]  overflow-hidden relative">
+                        <img class=" w-full h-full object-cover rounded-t-[.2rem]" src="./image/Rectangle 7650.png"
+                            alt="">
+                        <img class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-2/3 h-[5vw] w-[5vw] "
+                            src="./image/Group 39600.png " alt="">
+                    </div>
+                    <div class="para_9 w-[100%] ">
+                        <h1 class=" text-[1rem] md:text-[1.8rem] lg:text-[.8rem] 2xl:text-[1.2rem] w-[100%] py-[.6rem] mt-[.1rem] text-black"
+                            style="font-weight: 700;">Tera
+                            Chand sa Mukhada
+                        </h1>
+                        <p class="text-black w-[100%] lg:w-[100%] xl:w-[96%] text-[.6rem] md:text-[1.2rem] lg:text-[.6rem] 2xl:text-[.9rem]"
+                            style="font-weight: 300;">
+                            Aliquam felis ex, viverra et
+                            commodo euismod, dignissim et eros. Integer efficitur sem neque, id rutrum diam aliquet
+                            et.
+                        </p>
+                    </div>
+                </div>
+                <div class="card_3 w-[100%] md:w-[90%] mx-auto ">
+                    <div class="img  w-[100%] lg:w-[16vw]  overflow-hidden relative">
+                        <img class=" w-full h-full object-cover rounded-t-[.2rem]" src="./image/Rectangle 7651.png"
+                            alt="">
+                        <img class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-2/3 h-[5vw] w-[5vw] "
+                            src="./image/Group 39600.png " alt="">
+                    </div>
+                    <div class="para_9 w-[100%] ">
+                        <h1 class=" text-[1rem] md:text-[1.8rem] lg:text-[.8rem] 2xl:text-[1.2rem] w-[100%] py-[.6rem] mt-[.1rem] text-black"
+                            style="font-weight: 700;">Tera
+                            Chand sa Mukhada
+                        </h1>
+                        <p class="text-black w-[100%] lg:w-[100%] xl:w-[96%] text-[.6rem] md:text-[1.2rem] lg:text-[.6rem] 2xl:text-[.9rem]"
+                            style="font-weight: 300;">
+                            Aliquam felis ex, viverra et
+                            commodo euismod, dignissim et eros. Integer efficitur sem neque, id rutrum diam aliquet
+                            et.
+                        </p>
+                    </div>
+                </div>
+                <div class="card_4 w-[100%] md:w-[90%] mx-auto ">
+                    <div class="img  w-[100%] lg:w-[17vw]  overflow-hidden relative">
+                        <img class=" w-full h-full object-cover rounded-t-[.2rem]" src="./image/Rectangle 7684.png"
+                            alt="">
+                        <img class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-2/3 h-[5vw] w-[5vw] "
+                            src="./image/Group 39600.png " alt="">
+                    </div>
+                    <div class="para_9 w-[100%] ">
+                        <h1 class=" text-[1rem] md:text-[1.8rem] lg:text-[.8rem] 2xl:text-[1.2rem] w-[100%] py-[.6rem] mt-[.1rem] text-black"
+                            style="font-weight: 700;">Tera
+                            Chand sa Mukhada
+                        </h1>
+                        <p class="text-black w-[100%] lg:w-[100%] xl:w-[96%] text-[.6rem] md:text-[1.2rem] lg:text-[.6rem] 2xl:text-[.9rem]"
+                            style="font-weight: 300;">
+                            Aliquam felis ex, viverra et
+                            commodo euismod, dignissim et eros. Integer efficitur sem neque, id rutrum diam aliquet
+                            et.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page_5 w-full mt-[3rem]"
+            style="background-image: url('./image/Blog-standard-img-1\ 7.png'); background-size: 100% 100%;">
+            <div class="inner w-[70%] mx-auto block lg:flex justify-between items-center py-[6vw]">
+                <div class="left w-[70'5] lg:w-[45%] mx-auto ">
+                    <div class="des flex justify-between items-center">
+                        <h1 class="text-[1.2rem] 2xl:text-[2rem] text-white uppercase" style="font-weight: 700;">
+                            description</h1>
+                        <i class="ri-arrow-down-s-line text-white text-4xl"></i>
+                    </div>
+                    <hr class="my-[1vh] 2xl:mb-[9vh]">
+                    <div class="des flex justify-between items-center">
+                        <h1 class="text-[1.2rem] 2xl:text-[2rem] text-white uppercase" style="font-weight: 700;">
+                            ADDITIONAL INFO</h1>
+                        <i class="ri-arrow-down-s-line text-white text-4xl"></i>
+                    </div>
+                    <hr class="my-[1vh] 2xl:mb-[9vh]">
+                    <div class="des flex justify-between items-center">
+                        <h1 class="text-[1.2rem] 2xl:text-[2rem] text-white uppercase" style="font-weight: 700;">REVIEWS
+                        </h1>
+                        <i class="ri-arrow-down-s-line text-white text-4xl"></i>
+                    </div>
+                    <hr class="my-[1vh] 2xl:mb-[9vh]">
+                </div>
+                <div class="right w-[70'5] lg:w-[45%] mx-auto mt-[6vw] lg:mt-0 overflow-hidden">
+                    <img class="w-full h-full object-cover" src="./image/main-port-11 1.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="page_6  w-full  mt-[4rem]">
+            <div class="new text-center ">
+                <div class="uper_h1">
+                    <h1 class="text-[.6rem] 2xl:text-[1rem]" style="font-weight: 600;">PROJECTS</h1>
+                    <h1 class="mx-auto 2xl:w-[7vw]" style="background-color: aqua; height: 1px;width: 3vw;"></h1>
+                </div>
+                <div class="lower_h1">
+                    <h1 class="text-2xl 2xl:text-[2.3rem] mt-[1rem] capitalize" style="font-weight: 700;">Our Production
+                    </h1>
+                </div>
+            </div>
+            <div class="row  w-[75%] mx-auto  mt-10 block lg:flex items-center pl-[2vw] md:pl-[2vw] lg:pl-[3vw] gap-5">
+
+                <div class="card_1  md:w-[100%] lg:w-[39%] text-center mt-[3vw] lg:mt-2">
+                    <div class="img  w-[35%] mx-auto flex items-center justify-center overflow-hidden  ">
+                        <img class=" w-full h-full object-coverrounded-t-2xl  " src="./image/main-image-4.png" alt="">
+
+                    </div>
+                    <div class="para_3 w-full lg:w-[100%] mx-auto  text-center mt-[1rem]">
+                        <h1 class=" text-[1rem] md:text[1.2rem] lg:text-[1rem] 2xl:text-[1.52rem] mt-[.1rem] text-black"
+                            style="font-weight: 700;">
+                            DIRECTORS</h1>
+                        <p class="text-black w-[80%] lg:w-[100%]  2xl:w-[80%] mx-auto  text-[.6rem] md:text-[1rem] lg:text-[.6rem] 2xl:text-[.9rem]"
+                            style="font-weight: 300;">Aliquam
+                            felis ex,
+                            viverra et
+                            commodo euismod, dignissim et eros. Integer efficitur sem neque, id rutrum diam aliquet et.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="card_1  md:w-[100%] lg:w-[39%] text-center mt-[3vw] lg:mt-2">
+                    <div class="img  w-[35%] mx-auto flex items-center justify-center overflow-hidden  ">
+                        <img class=" w-full h-full object-coverrounded-t-2xl  " src="./image/main-image-7.png" alt="">
+
+                    </div>
+                    <div class="para_3 w-full lg:w-[100%] mx-auto  text-center mt-[1rem]">
+                        <h1 class=" text-[1rem] md:text-[1.2rem] lg:text-[1rem] 2xl:text-[1.52rem]  mt-[.1rem] text-black"
+                            style="font-weight: 700;">
+                            DIRECTORS</h1>
+                        <p class="text-black w-[80%] lg:w-[100%]  2xl:w-[80%] mx-auto  text-[.6rem] md:text-[1rem] lg:text-[.6rem] 2xl:text-[.9rem] "
+                            style="font-weight: 300;">Aliquam
+                            felis ex,
+                            viverra et
+                            commodo euismod, dignissim et eros. Integer efficitur sem neque, id rutrum diam aliquet et.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="card_1  md:w-[100%] lg:w-[39%] text-center mt-[3vw] lg:mt-2">
+                    <div class="img  w-[35%] mx-auto flex items-center justify-center overflow-hidden  ">
+                        <img class=" w-full h-full object-coverrounded-t-2xl  " src="./image/main-image-8.png" alt="">
+
+                    </div>
+                    <div class="para_3 w-full lg:w-[100%] mx-auto  text-center mt-[1rem]">
+                        <h1 class=" text-[1rem] md:text-[1.2rem] lg:text-[1rem] 2xl:text-[1.52rem] mt-[.1rem] text-black"
+                            style="font-weight: 700;">
+                            DIRECTORS</h1>
+                        <p class="text-black w-[80%] lg:w-[100%]  2xl:w-[80%] mx-auto  text-[.6rem] md:text-[1rem] lg:text-[.6rem] 2xl:text-[.9rem]"
+                            style="font-weight: 300;">Aliquam
+                            felis ex,
+                            viverra et
+                            commodo euismod, dignissim et eros. Integer efficitur sem neque, id rutrum diam aliquet et.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="card_1  md:w-[100%] lg:w-[39%] text-center mt-[3vw] lg:-mt-4">
+                    <div class="img  w-[25%] mx-auto flex items-center justify-center overflow-hidden  ">
+                        <img class=" w-full h-full object-coverrounded-t-2xl  " src="./image/main-image-9.png" alt="">
+
+                    </div>
+                    <div class="para_3 w-full lg:w-[100%] mx-auto  text-center mt-[2rem]">
+                        <h1 class=" text-[1rem] md:text-[1.2rem] lg:text-[1rem] 2xl:text-[1.52rem]  mt-[.1rem] text-black"
+                            style="font-weight: 700;">
+                            DIRECTORS</h1>
+                        <p class="text-black w-[80%] lg:w-[100%] 2xl:w-[80%] mx-auto  text-[.6rem] md:text-[1rem] lg:text-[.6rem] 2xl:text-[.9rem]"
+                            style="font-weight: 300;">Aliquam
+                            felis ex,
+                            viverra et
+                            commodo euismod, dignissim et eros. Integer efficitur sem neque, id rutrum diam aliquet et.
+                        </p>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="page_7 w-full h-[69vh] md:h-[35vh] lg:h-[60vh]  xl:h-[45vh] 2xl:h-[55vh] mt-10 pb-5  text-white"
+            style="background-image: url('./image/Blog-standard-img-1\ 7.png');background-size: 100% 100%; background-repeat: no-repeat;">
+            <div class="new text-center pt-[2rem]">
+                <div class="meet">
+                    <h1 class="text-[.9rem] lg:text-[.6rem] 2xl:text-[1.8rem] " style="font-weight: 600;">MEET US</h1>
+                    <hr class="w-[2.5rem] mx-auto">
+
+
+                    <h1 class="text-[2rem] lg:text-[1rem] 2xl:text-[2.5rem] mt-[1rem]" style="font-weight: 700;">EDGE’S
+                        PRODUCTION TEAM
+                    </h1>
+                </div>
+                <div class="para">
+                    <p class=" text-[.86rem] md:text-[.9rem] lg:text-[.7rem] xl:text-[1rem] 2xl:text-[1rem] w-[70%] lg:w-[45%] mt-[2rem] text-center m-auto"
+                        style="font-weight: 300;">
+                        Aliquam
+                        felis ex,
+                        viverra et commodo euismod, dignissim et eros. Integer efficitur sem neque, id rutrum diam
+                        aliquet
+                        et. Aliquam felis ex, viverra et commodo euismod, dignissim et eros. Integer efficitur sem
+                        neque, id
+                        rutrum diam aliquet et.</p>
+                </div>
+            </div>
+        </div>
+        <div class="page_8 -mt-[20vh] md:-mt-[10vh] lg:-mt-[19vh]  xl:-mt-[15vh]">
+            <div
+                class="outer-imges w-[70%] mx-auto text-black block lg:flex justify-center gap-4  mt-[2rem] space-y-8 lg:space-y-0 ">
+
+                <div class="first-img">
+                    <div class="img w-full lg:w-[18vw] mx-auto flex justify-center overflow-hidden">
+                        <img class="w-full h-full" src="./image/alfa-home-team-2.png" alt="">
+
+                    </div>
+                    <div class="para_4 text-center mx-auto mt-4">
+                        <h1 class="text-[1rem] lg:text-1rem 2xl:text-[1.52rem]" style="font-weight: 700;">Ram Lal ji
+                        </h1>
+                        <h5 class="text-[.7rem] lg:text-[.8rem] 2xl:text-[1rem]" style=" font-weight: 300;">Writer</h5>
+                    </div>
+                </div>
+                <div class="second-img">
+                    <div class="img w-full lg:w-[18vw] mx-auto flex justify-center overflow-hidden">
+                        <img class="w-full h-full" src="./image/alfa-home-team-3.png" alt="">
+
+                    </div>
+                    <div class="para_4 mx-auto text-center  mt-4">
+                        <h1 class="text-[1rem] lg:text-1rem 2xl:text-[1.52rem]" style="font-weight: 700;">Jetha Ram ji
+                        </h1>
+                        <h5 class="text-[.7rem] lg:text-[.8rem] 2xl:text-[1rem]" style=" font-weight: 300;">Cameraman
+                        </h5>
+                    </div>
+                </div>
+                <div class="third-img">
+                    <div class="img w-full lg:w-[18vw] mx-auto flex justify-center overflow-hidden">
+                        <img class="w-full h-full" src="./image/alfa-home-team-1.png" alt="">
+
+                    </div>
+                    <div class="para_4 text-center  mt-4">
+                        <h1 class="text-[1rem] lg:text-1rem 2xl:text-[1.52rem] w-full" style="font-weight: 700;">Lucky
+                            ji</h1>
+                        <h5 class="text-[.7rem] lg:text-[.8rem] 2xl:text-[1rem]" style="font-weight: 300;">Editor</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn w-full flex justify-center"><button class=" text-[.7rem] px-6   h-[2rem] mt-[2vw]  rounded-full"
+                style="border: 1px solid black;">view all</button></div>
+        <div class="page_9 w-[80%] lg:w-[60%] mx-auto lg:h-[10vh] mt-[3rem] ">
+            <div class="s-card text-center block px-1 space-y-4 lg:space-y-0 md:py-4 lg:px-2 py-1 lg:py-2  mb-7 w-[100%] rounded-3xl md:m-auo md:flex items-center justify-around"
+                style="background-color: #EFE6E6;">
+                <div class="sub w-20% text-center md:text-start ">
+                    <h1 class="text-[.65rem] md:text-[1rem] lg:text-[.8rem] 2xl:text-[1.3rem]">Subscribe</h1>
+                    <h1 class="text-[.65rem] md:text-[1rem] lg:text-[.8rem] 2xl:text-[1.3rem]"
+                        style="font-weight: 700;">Our Channel</h1>
+                </div>
+                <div class="input w-[65%] ">
+                    <input
+                        class="w-[90%] text-[.45rem] md:text-[1rem] lg:text-[.6rem] 2xl:text-[1rem] py-1 md:py-3 lg:py-3 2xl:py-4 ml-[17vw] md:ml-0  rounded-full pl-6  mb-[1vw] mt-[1vw] "
+                        style="background-color: transparent; border: 1px solid #b8b8b8;" type="text"
+                        placeholder="Enter Your Email Address">
+                </div>
+                <button
+                    class="text-white bg-[#fc6534] text-[.55rem] md:text-[1rem] 2xl:text-[1.2rem] md:w-[15%] px-2 py-1 md:py-2 md:px-2 2xl:px-1 2xl:py-4  rounded-full mb-[2vw] md:mb-[0]"
+                    style="font-weight: 600;">Subscribe</button>
+            </div>
+        </div>
+        <div class="page_10 w-full mt-[5vw]" style=" background: #2B2B2B;">
+            <footer class=" w-[80%] lg:w-[70%] mx-auto pt-[6vw] block  lg:flex justify-center relative p-3">
+                <div class="left text-white w-[75%] block   lg:w-[30%]  mt-[3vh] m-auto ">
+                    <div class="con pt-[3vw]    ">
+                        <hr class=" w-[30vw] lg:w-[3vw] pt-[2vh]">
+                        <h1 class="text-[.95rem] md:text-[1.1rem] lg:text-[1.2rem] 2xl:text-[2.2rem]"
+                            style="font-weight: 600;">I'd love to work together on
+                        </h1>
+                        <h1 class="text-[.95rem] md:text-[1.2rem] 2xl:text-[2.2rem]" style="font-weight: 600;">your next
+                            project!</h1>
+                        <hr class="w-[10vw] mt-[2vh]">
+                    </div>
+                    <div class="con2 text-white ">
+                        <div class="location flex  gap-5 mt-[1vh] xl:mt-[3vh]">
+                            <i class="ri-map-pin-line text-[#fc6534] text-lg lg:text-lg 2xl:text-[1.62rem]"></i>
+                            <p
+                                class=" w-[100%] lg:w-[20vw] text-[.65rem] md:text-[1rem] lg:text-[.7rem] xl:text-[1rem] 2xl:text-[1.2rem]">
+                                Kitzone Technology Private
+                                Limited402,
+                                Sanskriti
+                                Heights,Near New Kohinoor Cinema,Chopasni Road,Jodhpur, Rajasthan 342003</p>
+                        </div>
+                        <div class="email flex items-center gap-5 mt-[1vh] xl:mt-[3vh]">
+                            <i class="ri-mail-send-line text-[#fc6534] text-lg lg:text-lg 2xl:text-[1.62rem]"></i>
+                            <h1 class="text-[.65rem] md:text-[1rem] lg:text-[.7rem] xl:text-[1rem] 2xl:text-[1.2rem] ">
+                                support@kitzone.in</h1>
+                        </div>
+                        <div class="number flex items-center  gap-5 mt-[1vh] xl:mt-[3vh] mb-4">
+                            <i class="ri-phone-line text-[#fc6534] text-lg lg:text-lg 2xl:text-[1.62rem]"></i>
+                            <h1 class="text-[.65rem] md:text-[1rem] lg:text-[.7rem] xl:text-[1rem] 2xl:text-[1.2rem]">
+                                +919792934594</h1>
+                        </div>
+                    </div>
+                    <div class="social-app  lg:flex gap-2 text-white  text-lg mt-[4vh] hidden mb-5 ">
+                        <a class="w-6 h-6 2xl:h-10 2xl:w-10 bg-gray-600 rounded-full  flex items-center justify-center"
+                            href="https://facebook.com"><i
+                                class="ri-facebook-line text-[#fc6534]  2xl:text-[1.6rem] text-[1rem]"></i></a>
+                        <a class="w-6 h-6 2xl:h-10 2xl:w-10 bg-gray-600 rounded-full flex items-center justify-center"
+                            href="https://instagram.com"><i
+                                class="ri-instagram-line text-[#fc6534] 2xl:text-[1.6rem]  text-[1rem]"></i></a>
+                        <a class="w-6 h-6 2xl:h-10 2xl:w-10 bg-gray-600 rounded-full  flex items-center justify-center"
+                            href="https://twitter.com"><i
+                                class="ri-twitter-line text-[#fc6534] 2xl:text-[1.6rem]  text-[1rem]"></i></a>
+                        <a class="w-6 h-6 2xl:h-10 2xl:w-10 bg-gray-600 rounded-full  flex items-center justify-center"
+                            href="https://linkedin.com"><i
+                                class="ri-linkedin-line text-[#fc6534]  2xl:text-[1.6rem] text-[1rem]"></i></a>
+                        <a class="w-6 h-6 2xl:h-10 2xl:w-10 bg-gray-600 rounded-full  flex items-center justify-center"
+                            href="https://youtube.com"><i
+                                class="ri-youtube-line text-[#fc6534] 2xl:text-[1.6rem]  text-[1rem]"></i></a>
+                        <a class="w-6 h-6 2xl:h-10 2xl:w-10 bg-gray-600 rounded-full  flex items-center justify-center"
+                            href="https://whatsapp.com"><i
+                                class="ri-whatsapp-line text-[#fc6534]  2xl:text-[1.6rem] text-[1rem]"></i></a>
+                    </div>
+                </div>
+                <div class="right w-[60vw] mx-auto ml-[12v] lg:w-[34vw]  md:m-auto bg-white rounded-lg xl:pl-[2vw] ">
+                    <div class="name w-[90%] m-auto block lg:mt-[3vw] xl:mt-[3vw] xl:flex gap-5 ">
+                        <div class="first  w-full">
+
+                            <input
+                                class=" w-full outline-none  text-[.67rem] sm:text-[.7rem] md:text-[1rem] pt-4 lg:pt-0 lg:text-[.6rem] xl:text-[.6rem] no-underline 2xl:text-[1.2rem] "
+                                style="padding-bottom: 1vh; color: #a6a4a4;" type="text" placeholder="First Name">
+
+                            <hr>
+                        </div>
+                        <div class="second w-full mt-[3vw] md:mt-[3vw] lg:mt-[2vh] xl:mt-0 ">
+                            <input style="padding-bottom: 1vh; color: #a6a4a4;"
+                                class="w-full outline-none text-[.67rem] sm:text-[.7rem] md:text-[1rem] lg:text-[.6rem] xl:text-[.6rem]  2xl:text-[1.2rem]"
+                                type="text" placeholder="Last Name">
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="email w-[90%] m-auto mt-[3vw] md:mt-[3vh] lg:mt-[2vh] xl:mt-[4vh] 2xl:mt-[6vh]">
+
+                        <input
+                            class="w-full outline-none text-[.67rem] sm:text-[.7rem] md:text-[1rem] lg:text-[.6rem] xl:text-[.6rem]  2xl:text-[1.2rem]"
+                            style="color: #a6a4a4; border-bottom: 1px loled #a6a4a4; padding-bottom: 1vh;" type="email"
+                            placeholder="Your Email">
+
+                        <hr>
+                    </div>
+                    <div class="message w-[90%] m-auto mt-[3vw] md:mt-[3vh] lg:mt-[2vh] xl:mt-[4vh] 2xl:mt-[6vh]">
+                        <input
+                            class="w-full outline-none text-[.67rem] sm:text-[.7rem] md:text-[1rem] lg:text-[.6rem] xl:text-[.6rem]  2xl:text-[1.2rem]"
+                            style="color: #a6a4a4; border-bottom: 1px loled #a6a4a4; padding-bottom: 1vh;" type="text"
+                            placeholder="Tyoe your message">
+
+                        <hr>
+                    </div>
+                    <button
+                        class="text-white bg-[#fc6534]  text-[.6rem] md:text-[.7rem] 2xl:text-[1.2rem] py-1 px-4 md:py-[1vh] md:px-[2.4vw] lg:py-1 2xl:py-3 2xl:px-[3vw] rounded-full ml-[2vw] mt-[4vw] md:mt-[3vh] lg:mt-[4vh] xl:mt-[4vh] 2xl:mt-[6vh] mb-[2vw]">Send</button>
+                </div>
+
+
+            </footer>
+        </div>
+        <hr class=" ">
+        <div
+            class="copy h-[10vh] bg-[#2B2B2B] text-gray-500 text-xs 2xl:text-[1.2rem] flex justify-center items-center">
+            All Rights Reserved @2023 Pradeep Kumar
+        </div>
+        <a href="index.html">
+            <button
+                class="text-white scroll-brn bg-[#fc6534] fixed px-[.2rem] py-[.05rem] sm:px-2 sm:py-1 md:py-2 md:px-3 rounded-[.19rem] sm:rounded-md lg:rounded-xl left-[88vw] md:left-[88vw] lg:left-[93vw] bottom-24  "><i
+                    class="ri-arrow-up-line sm:text-[1rem] lg:text-3xl"></i></button>
+        </a>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./javascript/nav.js"></script>
+<script src="./javascript/slide.js"></script>
+<script src="./javascript/index.js"></script>
+
+</html>
